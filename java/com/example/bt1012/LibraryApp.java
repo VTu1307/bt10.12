@@ -18,7 +18,7 @@ public class LibraryApp extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        // Tạo thư viện
+        
         thuvien = new Thuvien("TV01", "Thư viện Hà Nội", 10);
 
         TextField txtId = new TextField();
@@ -57,7 +57,7 @@ public class LibraryApp extends Application {
         });
 
         btnSearch.setOnAction(e -> {
-            String keyword = txtTieude.getText(); // Tìm theo tiêu đề sách
+            String keyword = txtTieude.getText();
             Book foundBook = thuvien.timSach(keyword);
             if (foundBook != null) {
                 Alert alert = new Alert(Alert.AlertType.INFORMATION);
