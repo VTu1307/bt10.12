@@ -6,9 +6,9 @@ public class Book {
     private String tacgia;
     private String theloai;
     private int namxuatban;
-    private boolean trangthai;  // true = sẵn sàng, false = đang mượn
+    private boolean trangthai;  
 
-    // Constructor
+    
     public Book(String id, String tieude, String tacgia, String theloai, int namxuatban, boolean trangthai) {
         this.id = id;
         this.tieude = tieude;
@@ -18,7 +18,7 @@ public class Book {
         this.trangthai = trangthai;
     }
 
-    // Getters and Setters
+  
     public String getId() { return id; }
     public void setId(String id) { this.id = id; }
 
